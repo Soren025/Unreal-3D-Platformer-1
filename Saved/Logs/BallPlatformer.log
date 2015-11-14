@@ -1,216 +1,1045 @@
-﻿[2015.11.14-18.57.28:418][  0]Log file open, 11/14/15 12:57:28
-[2015.11.14-18.57.28:418][  0]LogInit:Display: Running engine for game: BallPlatformer
-[2015.11.14-18.57.28:418][  0]LogInit:Display: RandInit(-1956761058) SRandInit(-1956761058).
-[2015.11.14-18.57.28:418][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2015.11.14-18.57.28:418][  0]LogStats: Stats thread started at 0.154231
-[2015.11.14-18.57.28:418][  0]LogInit: Version: 4.9.1-2689999+++depot+UE4-Releases+4.9
-[2015.11.14-18.57.28:418][  0]LogInit: API Version: 2672455
-[2015.11.14-18.57.28:418][  0]LogInit: Compiled (64-bit): Sep 14 2015 04:12:03
-[2015.11.14-18.57.28:418][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
-[2015.11.14-18.57.28:418][  0]LogInit: Build Configuration: Development
-[2015.11.14-18.57.28:418][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
-[2015.11.14-18.57.28:418][  0]LogInit: Command line:  
-[2015.11.14-18.57.28:418][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.9/Engine/Binaries/Win64/
-[2015.11.14-18.57.28:418][  0]LogInit: Rocket: 1
-[2015.11.14-18.57.28:655][  0]LogInit: Using libcurl 7.41.0
-[2015.11.14-18.57.28:655][  0]LogInit:  - built for x86_64-pc-win32
-[2015.11.14-18.57.28:655][  0]LogInit:  - supports SSL with WinSSL
-[2015.11.14-18.57.28:655][  0]LogInit:  - other features:
-[2015.11.14-18.57.28:655][  0]LogInit:      CURL_VERSION_SSL
-[2015.11.14-18.57.28:655][  0]LogInit:      CURL_VERSION_IPV6
-[2015.11.14-18.57.28:655][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2015.11.14-18.57.28:655][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2015.11.14-18.57.28:655][  0]LogInit:      CURL_VERSION_IDN
-[2015.11.14-18.57.28:655][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2015.11.14-18.57.28:655][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2015.11.14-18.57.28:655][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2015.11.14-18.57.28:655][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2015.11.14-18.57.28:655][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2015.11.14-18.57.28:763][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2015.11.14-18.57.28:770][  0]LogInit: Object subsystem initialized
-[2015.11.14-18.57.28:772][  0]LogInit: Selected Device Profile: [Windows]
-[2015.11.14-18.57.28:772][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2015.11.14-18.57.28:819][  0]LogInit: Computer: MONKSCAPE
-[2015.11.14-18.57.28:819][  0]LogInit: User: Noah
-[2015.11.14-18.57.28:819][  0]LogInit: CPU Page size=4096, Cores=4
-[2015.11.14-18.57.28:819][  0]LogInit: High frequency timer resolution =3.312851 MHz
-[2015.11.14-18.57.28:819][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
-[2015.11.14-18.57.28:819][  0]LogMemory: Platform Memory Stats for Windows
-[2015.11.14-18.57.28:819][  0]LogMemory: Process Physical Memory: 53.54 MB used, 53.54 MB peak
-[2015.11.14-18.57.28:819][  0]LogMemory: Process Virtual Memory: 58.30 MB used, 58.30 MB peak
-[2015.11.14-18.57.28:819][  0]LogMemory: Physical Memory: 3890.29 MB used, 16342.34 MB total
-[2015.11.14-18.57.28:819][  0]LogMemory: Virtual Memory: 339.85 MB used, 8388608.00 MB total
-[2015.11.14-18.57.29:892][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2015.11.14-18.57.31:349][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960 (Feature Level 11_0)
-[2015.11.14-18.57.31:349][  0]LogD3D11RHI: Adapter has 1969MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 1 output[s]
-[2015.11.14-18.57.31:349][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2015.11.14-18.57.31:395][  0]LogD3D11RHI: !Direct3DDevice
-[2015.11.14-18.57.31:395][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2015.11.14-18.57.31:404][  0]LogD3D11RHI: Async texture creation enabled
-[2015.11.14-18.57.31:730][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Intermediate/Shaders/WorkingDirectory/3340/).
-[2015.11.14-18.57.31:730][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Intermediate/Shaders/tmp/25DF81BA45DFA65B15C24B9ED6D7FABB/'.
-[2015.11.14-18.57.31:730][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2015.11.14-18.57.36:634][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2015.11.14-18.57.36:640][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2015.11.14-18.57.36:646][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2015.11.14-18.57.36:651][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2015.11.14-18.57.36:655][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2015.11.14-18.57.36:662][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2015.11.14-18.57.36:665][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2015.11.14-18.57.36:669][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2015.11.14-18.57.36:672][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2015.11.14-18.57.36:677][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2015.11.14-18.57.36:680][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2015.11.14-18.57.36:684][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2015.11.14-18.57.36:685][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2015.11.14-18.57.36:766][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2015.11.14-18.57.36:769][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2015.11.14-18.57.36:773][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2015.11.14-18.57.36:779][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2015.11.14-18.57.36:779][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.11.14-18.57.37:574][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2015.11.14-18.57.38:268][  0]LogDerivedDataCache: Loaded boot cache 0.69s 41MB C:/Users/Noah/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
-[2015.11.14-18.57.38:268][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Noah/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
-[2015.11.14-18.57.38:268][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2015.11.14-18.57.38:268][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2015.11.14-18.57.38:268][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2015.11.14-18.57.38:268][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2015.11.14-18.57.38:505][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2015.11.14-18.57.38:516][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Noah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2015.11.14-18.57.48:102][  0]LogInit: Selected Device Profile: [Windows]
-[2015.11.14-18.57.48:225][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2015.11.14-18.57.48:630][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2015.11.14-18.57.48:630][  0]LogMeshUtilities: No automatic mesh merging module available
-[2015.11.14-18.57.52:485][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2015.11.14-18.58.14:174][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2015.11.14-18.58.14:961][  0]LogAssetRegistry: FAssetRegistry took 0.0368 seconds to start up
-[2015.11.14-18.58.17:662][  0]SourceControl: Info Source control is disabled
-[2015.11.14-18.58.17:675][  0]SourceControl: Info Source control is disabled
-[2015.11.14-18.58.17:775][  0]SourceControl: Info Source control is disabled
-[2015.11.14-18.58.17:829][  0]SourceControl: Info Source control is disabled
-[2015.11.14-18.58.18:971][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.11.14-18.58.19:298][  0]LogObj: 28361 objects as part of root set at end of initial load.
-[2015.11.14-18.58.19:298][  0]LogUObjectAllocator: 6038872 out of 0 bytes used by permanent object pool.
-[2015.11.14-18.58.20:071][  0]LogEngine: Initializing Engine...
-[2015.11.14-18.58.20:128][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
-[2015.11.14-18.58.20:408][  0]LogHMD: SteamVR failed to initialize.  Err: 108
-[2015.11.14-18.58.21:515][  0]LogAIModule: Creating AISystem for world NewWorld
-[2015.11.14-18.58.21:973][  0]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2015.11.14-18.58.21:985][  0]LogInit: FAudioDevice initialized.
-[2015.11.14-18.58.22:006][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Noah/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
-[2015.11.14-18.58.22:011][  0]LogInit: Texture streaming: Enabled
-[2015.11.14-18.58.22:020][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2015.11.14-18.58.22:020][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.1-2689999+++depot+UE4-Releases+4.9
-[2015.11.14-18.58.22:021][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 9ff354f74511c4f3728257bf540542e2|61799581fa0d44d7a5e52b827142a109|bda8f465-413d-4f56-886b-8d04d6389ecb
-[2015.11.14-18.58.22:024][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2015.11.14-18.58.22:267][  0]LogInit: Transaction tracking system initialized
-[2015.11.14-18.58.24:523][  0]BlueprintLog: New page: Editor Load
-[2015.11.14-18.58.25:505][  0]LocalizationService: Info Localization service is disabled
-[2015.11.14-18.58.26:756][  0]LogConsoleResponse:Display: 
-[2015.11.14-18.58.31:400][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Content/' took 0.01s
-[2015.11.14-18.58.31:401][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2015.11.14-18.58.34:078][  0]SourceControl: Info Source control is disabled
-[2015.11.14-18.58.34:201][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.11.14-18.58.34:362][  0]LightingResults: New page: Lighting Build
-[2015.11.14-18.58.34:616][  0]MapCheck: New page: Map Check
-[2015.11.14-18.58.34:616][  0]LightingResults: New page: Lighting Build
-[2015.11.14-18.58.35:515][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024719E40
-[2015.11.14-18.58.44:522][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2015.11.14-18.58.45:712][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.11.14-18.58.45:766][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.11.14-18.58.45:823][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 56.988ms to complete.
-[2015.11.14-18.58.45:835][  0]LogFileHelpers: Loading map 'Minimal_Default' took 11.729
-[2015.11.14-18.58.47:651][  0]LogCollectionManager: Loaded 0 collections in 0.002586 seconds
-[2015.11.14-18.58.47:863][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Collections/' took 0.01s
-[2015.11.14-18.58.47:863][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Content/Developers/Noah/Collections/' took 0.01s
-[2015.11.14-18.58.47:863][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Content/Collections/' took 0.01s
-[2015.11.14-18.58.47:863][  0]LogContentBrowser: Native class hierarchy populated in 0.0504 seconds. Added 1867 classes and 333 folders.
-[2015.11.14-18.58.47:990][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
-[2015.11.14-18.58.48:145][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2015.11.14-18.58.52:798][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2015.11.14-18.58.53:047][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2015.11.14-18.58.55:613][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2015.11.14-18.58.56:622][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2015.11.14-18.58.56:768][  0]LogLoad: Full Startup: 90.61 seconds (BP compile: 0.53 seconds)
-[2015.11.14-18.58.58:777][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2015.11.14-18.59.01:202][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
-[2015.11.14-18.59.03:620][  4]LogAssetRegistry: Asset discovery search completed in 48.6696 seconds
-[2015.11.14-18.59.03:620][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2015.11.14-18.59.03:658][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000035 seconds (updated 0 objects)
-[2015.11.14-18.59.25:553][927]LogAIModule: Creating AISystem for world StarterMap
-[2015.11.14-18.59.25:555][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Ambient_Dust.P_Ambient_Dust Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.P_Ambient_Dust_17.ParticleSystemComponent0
-[2015.11.14-18.59.25:599][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Fire.P_Fire Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Fire_C_1.P_Fire
-[2015.11.14-18.59.25:599][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Smoke.P_Smoke Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Smoke_C_1.P_Smoke
-[2015.11.14-18.59.25:599][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Sparks.P_Sparks Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Sparks_C_1.Sparks
-[2015.11.14-18.59.25:599][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Steam_Lit.P_Steam_Lit Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Steam_C_1.P_Steam_Lit
-[2015.11.14-18.59.25:602][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Fire.P_Fire Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Fire_C_1.P_Fire
-[2015.11.14-18.59.25:602][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Fire.P_Fire Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Fire_C_1.P_Fire
-[2015.11.14-18.59.25:602][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Smoke.P_Smoke Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Smoke_C_1.P_Smoke
-[2015.11.14-18.59.25:603][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Smoke.P_Smoke Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Smoke_C_1.P_Smoke
-[2015.11.14-18.59.25:603][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Sparks.P_Sparks Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Sparks_C_1.Sparks
-[2015.11.14-18.59.25:603][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Sparks.P_Sparks Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Sparks_C_1.Sparks
-[2015.11.14-18.59.25:603][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Steam_Lit.P_Steam_Lit Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Steam_C_1.P_Steam_Lit
-[2015.11.14-18.59.25:603][927]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Steam_Lit.P_Steam_Lit Component=/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.Blueprint_Effect_Steam_C_1.P_Steam_Lit
-[2015.11.14-18.59.25:766][927]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/StarterMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.11.14-18.59.25:766][927]LightingResults: New page: Lighting Build
-[2015.11.14-18.59.25:780][927]LoadErrors: New page: Loading map: StarterMap.umap
-[2015.11.14-18.59.25:789][927]MapCheck: New page: Map Check
-[2015.11.14-18.59.25:789][927]LightingResults: New page: Lighting Build
-[2015.11.14-18.59.25:839][927]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000130CE7A0
-[2015.11.14-18.59.25:939][927]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.11.14-18.59.25:978][927]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.11.14-18.59.26:048][927]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 69.799ms to complete.
-[2015.11.14-18.59.26:049][927]LogFileHelpers: Loading map 'StarterMap' took 0.284
-[2015.11.14-18.59.35:406][839]LogAIModule: Creating AISystem for world Advanced_Lighting
-[2015.11.14-18.59.35:408][839]LogStaticMesh:Warning: Cached component instance data transform did not match!  Discarding cached lighting data which will cause lighting to be unbuilt.
-/Game/StarterContent/Maps/Advanced_Lighting.Advanced_Lighting:PersistentLevel.BP_LightStudio_C_0.Skybox
-Current X=0.000000 Y=0.000000 Z=1500.000000 Cached X=0.000000 Y=0.000000 Z=1500.000000
-[2015.11.14-18.59.35:468][839]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Advanced_Lighting.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.11.14-18.59.35:468][839]LightingResults: New page: Lighting Build
-[2015.11.14-18.59.35:482][839]LoadErrors: New page: Loading map: Advanced_Lighting.umap
-[2015.11.14-18.59.35:484][839]MapCheck: New page: Map Check
-[2015.11.14-18.59.35:484][839]LightingResults: New page: Lighting Build
-[2015.11.14-18.59.35:496][839]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003040BD80
-[2015.11.14-18.59.35:500][839]LogStaticMesh:Warning: Cached component instance data transform did not match!  Discarding cached lighting data which will cause lighting to be unbuilt.
-/Game/StarterContent/Maps/Advanced_Lighting.Advanced_Lighting:PersistentLevel.BP_LightStudio_C_0.Skybox
-Current X=0.000000 Y=0.000000 Z=1500.000000 Cached X=0.000000 Y=0.000000 Z=1500.000000
-[2015.11.14-18.59.35:530][839]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.11.14-18.59.35:559][839]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.11.14-18.59.35:635][839]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 76.034ms to complete.
-[2015.11.14-18.59.35:635][839]LogFileHelpers: Loading map 'Advanced_Lighting' took 0.168
-[2015.11.14-18.59.39:328][256]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.14-18.59.39:342][256]PIE: New page: PIE session: Advanced_Lighting (Nov 14, 2015, 6:59:39 AM)
-[2015.11.14-18.59.39:342][256]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Advanced_Lighting
-[2015.11.14-18.59.39:345][256]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002644s)
-[2015.11.14-18.59.39:345][256]LogAIModule: Creating AISystem for world Advanced_Lighting
-[2015.11.14-18.59.39:345][256]LogPlayLevel: PIE: World Init took: (0.000564s)
-[2015.11.14-18.59.39:346][256]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Advanced_Lighting.Advanced_Lighting to /Game/StarterContent/Maps/UEDPIE_0_Advanced_Lighting.Advanced_Lighting (0.003379s)
-[2015.11.14-18.59.39:372][256]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2015.11.14-18.59.39:381][256]LogInit: FAudioDevice initialized.
-[2015.11.14-18.59.39:467][256]LogWorld: Game class is 'GameMode'
-[2015.11.14-18.59.39:501][256]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Advanced_Lighting.Advanced_Lighting up for play (max tick rate 0) at 2015.11.14-12.59.39
-[2015.11.14-18.59.39:501][256]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Advanced_Lighting.Advanced_Lighting:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.14-18.59.39:513][256]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Advanced_Lighting.Advanced_Lighting:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.14-18.59.39:517][256]LogWorld: Bringing up level for play took: 0.017727
-[2015.11.14-18.59.39:651][256]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Advanced_Lighting 1.274
-[2015.11.14-18.59.49:338][381]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000062F84FE0
-[2015.11.14-18.59.57:036][815]LightingResults: New page: Lighting Build
-[2015.11.14-18.59.57:037][815]MapCheck: New page: Map Check
-[2015.11.14-18.59.57:037][815]LightingResults: New page: Lighting Build
-[2015.11.14-18.59.57:053][815]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000030374D60
-[2015.11.14-18.59.57:056][815]LogAIModule: Creating AISystem for world NewWorld
-[2015.11.14-18.59.57:058][815]LoadErrors: New page: New Map
-[2015.11.14-18.59.57:096][815]LogAIModule: Creating AISystem for world Advanced_Lighting
-[2015.11.14-18.59.57:097][815]LogStaticMesh:Warning: Cached component instance data transform did not match!  Discarding cached lighting data which will cause lighting to be unbuilt.
-/Game/StarterContent/Maps/Advanced_Lighting.Advanced_Lighting:PersistentLevel.BP_LightStudio_C_0.Skybox
-Current X=0.000000 Y=0.000000 Z=1500.000000 Cached X=0.000000 Y=0.000000 Z=1500.000000
-[2015.11.14-19.00.05:260][960]LogAIModule: Creating AISystem for world Minimal_Default
-[2015.11.14-19.00.05:277][960]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.11.14-19.00.05:277][960]LightingResults: New page: Lighting Build
-[2015.11.14-19.00.05:291][960]LoadErrors: New page: Loading map: Minimal_Default.umap
-[2015.11.14-19.00.05:291][960]MapCheck: New page: Map Check
-[2015.11.14-19.00.05:291][960]LightingResults: New page: Lighting Build
-[2015.11.14-19.00.05:303][960]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000062F87CE0
-[2015.11.14-19.00.05:305][960]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.11.14-19.00.05:333][960]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.11.14-19.00.05:408][960]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 74.579ms 
+﻿[2015.11.14-21.48.51:751][  0]Log file open, 11/14/15 15:48:51
+[2015.11.14-21.48.51:751][  0]LogInit:Display: Running engine for game: BallPlatformer
+[2015.11.14-21.48.51:751][  0]LogInit:Display: RandInit(2050444664) SRandInit(2050444664).
+[2015.11.14-21.48.51:751][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.11.14-21.48.51:751][  0]LogStats: Stats thread started at 0.071969
+[2015.11.14-21.48.51:751][  0]LogInit: Version: 4.9.1-2689999+++depot+UE4-Releases+4.9
+[2015.11.14-21.48.51:751][  0]LogInit: API Version: 2672455
+[2015.11.14-21.48.51:751][  0]LogInit: Compiled (64-bit): Sep 14 2015 04:12:03
+[2015.11.14-21.48.51:751][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.11.14-21.48.51:751][  0]LogInit: Build Configuration: Development
+[2015.11.14-21.48.51:751][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.11.14-21.48.51:751][  0]LogInit: Command line:  
+[2015.11.14-21.48.51:751][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.9/Engine/Binaries/Win64/
+[2015.11.14-21.48.51:751][  0]LogInit: Rocket: 1
+[2015.11.14-21.48.51:760][  0]LogInit: Using libcurl 7.41.0
+[2015.11.14-21.48.51:760][  0]LogInit:  - built for x86_64-pc-win32
+[2015.11.14-21.48.51:760][  0]LogInit:  - supports SSL with WinSSL
+[2015.11.14-21.48.51:760][  0]LogInit:  - other features:
+[2015.11.14-21.48.51:760][  0]LogInit:      CURL_VERSION_SSL
+[2015.11.14-21.48.51:760][  0]LogInit:      CURL_VERSION_IPV6
+[2015.11.14-21.48.51:760][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.11.14-21.48.51:760][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.11.14-21.48.51:760][  0]LogInit:      CURL_VERSION_IDN
+[2015.11.14-21.48.51:760][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.11.14-21.48.51:760][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.11.14-21.48.51:760][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.11.14-21.48.51:760][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.11.14-21.48.51:760][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.11.14-21.48.51:766][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.11.14-21.48.51:774][  0]LogInit: Object subsystem initialized
+[2015.11.14-21.48.51:776][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.14-21.48.51:776][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.11.14-21.48.51:785][  0]LogInit: Computer: MONKSCAPE
+[2015.11.14-21.48.51:785][  0]LogInit: User: Noah
+[2015.11.14-21.48.51:785][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.11.14-21.48.51:785][  0]LogInit: High frequency timer resolution =3.312851 MHz
+[2015.11.14-21.48.51:785][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2015.11.14-21.48.51:785][  0]LogMemory: Platform Memory Stats for Windows
+[2015.11.14-21.48.51:785][  0]LogMemory: Process Physical Memory: 53.55 MB used, 53.55 MB peak
+[2015.11.14-21.48.51:785][  0]LogMemory: Process Virtual Memory: 58.31 MB used, 58.31 MB peak
+[2015.11.14-21.48.51:785][  0]LogMemory: Physical Memory: 5100.94 MB used, 16342.34 MB total
+[2015.11.14-21.48.51:785][  0]LogMemory: Virtual Memory: 339.85 MB used, 8388608.00 MB total
+[2015.11.14-21.48.51:820][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2015.11.14-21.48.52:600][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960 (Feature Level 11_0)
+[2015.11.14-21.48.52:600][  0]LogD3D11RHI: Adapter has 1969MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 2 output[s]
+[2015.11.14-21.48.52:600][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.11.14-21.48.52:603][  0]LogD3D11RHI: !Direct3DDevice
+[2015.11.14-21.48.52:603][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2015.11.14-21.48.52:613][  0]LogD3D11RHI: Async texture creation enabled
+[2015.11.14-21.48.52:626][  0]LogShaderCompilers: Guid format shader working directory is 16 characters bigger than the processId version (../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Intermediate/Shaders/WorkingDirectory/792/).
+[2015.11.14-21.48.52:626][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Intermediate/Shaders/tmp/D23BEAD6456952D9F91BF9BD6E0B19D6/'.
+[2015.11.14-21.48.52:626][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.11.14-21.48.53:761][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.11.14-21.48.53:767][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.11.14-21.48.53:773][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.11.14-21.48.53:778][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.11.14-21.48.53:782][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.11.14-21.48.53:786][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.11.14-21.48.53:790][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.11.14-21.48.53:793][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.11.14-21.48.53:797][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.11.14-21.48.53:800][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.11.14-21.48.53:803][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.11.14-21.48.53:808][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.11.14-21.48.53:809][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2015.11.14-21.48.53:825][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.11.14-21.48.53:828][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.11.14-21.48.53:831][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.11.14-21.48.53:835][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.11.14-21.48.53:835][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.11.14-21.48.53:913][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.11.14-21.48.53:962][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/Noah/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.14-21.48.53:962][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Noah/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2015.11.14-21.48.53:962][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.11.14-21.48.53:962][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.11.14-21.48.53:962][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.11.14-21.48.53:962][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.11.14-21.48.54:117][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.11.14-21.48.54:129][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Noah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.11.14-21.48.54:312][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.14-21.48.54:312][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.11.14-21.48.54:337][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.11.14-21.48.54:337][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.11.14-21.48.54:726][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.11.14-21.48.55:392][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.11.14-21.48.55:483][  0]LogAssetRegistry: FAssetRegistry took 0.0104 seconds to start up
+[2015.11.14-21.48.55:659][  0]SourceControl: Info Source control is disabled
+[2015.11.14-21.48.55:675][  0]SourceControl: Info Source control is disabled
+[2015.11.14-21.48.55:685][  0]SourceControl: Info Source control is disabled
+[2015.11.14-21.48.55:695][  0]SourceControl: Info Source control is disabled
+[2015.11.14-21.48.55:832][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.14-21.48.55:903][  0]LogObj: 28361 objects as part of root set at end of initial load.
+[2015.11.14-21.48.55:903][  0]LogUObjectAllocator: 6038864 out of 0 bytes used by permanent object pool.
+[2015.11.14-21.48.55:960][  0]LogEngine: Initializing Engine...
+[2015.11.14-21.48.55:962][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2015.11.14-21.48.55:968][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2015.11.14-21.48.56:103][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.11.14-21.48.56:126][  0]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-21.48.56:136][  0]LogInit: FAudioDevice initialized.
+[2015.11.14-21.48.56:163][  0]LogDerivedDataCache: Saved boot cache 0.03s 41MB C:/Users/Noah/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.14-21.48.56:171][  0]LogInit: Texture streaming: Enabled
+[2015.11.14-21.48.56:181][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.11.14-21.48.56:181][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.1-2689999+++depot+UE4-Releases+4.9
+[2015.11.14-21.48.56:181][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 9ff354f74511c4f3728257bf540542e2|61799581fa0d44d7a5e52b827142a109|bda8f465-413d-4f56-886b-8d04d6389ecb
+[2015.11.14-21.48.56:181][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.11.14-21.48.56:207][  0]LogInit: Transaction tracking system initialized
+[2015.11.14-21.48.56:244][  0]BlueprintLog: New page: Editor Load
+[2015.11.14-21.48.56:352][  0]LocalizationService: Info Localization service is disabled
+[2015.11.14-21.48.56:436][  0]LogConsoleResponse:Display: 
+[2015.11.14-21.48.56:560][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.11.14-21.48.56:630][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Content/' took 0.01s
+[2015.11.14-21.48.56:630][  0]SourceControl: Info Source control is disabled
+[2015.11.14-21.48.56:630][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.11.14-21.48.56:630][  0]LogEditorServer:Warning: Can't find file '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Minimal_Default.umap'
+[2015.11.14-21.48.56:630][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.11.14-21.48.56:666][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 35.705ms to complete.
+[2015.11.14-21.48.56:666][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.036
+[2015.11.14-21.48.56:778][  0]LogCollectionManager: Loaded 0 collections in 0.001980 seconds
+[2015.11.14-21.48.56:816][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Collections/' took 0.01s
+[2015.11.14-21.48.56:816][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Content/Developers/Noah/Collections/' took 0.01s
+[2015.11.14-21.48.56:816][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/Unreal-3D-Platformer-1/Content/Collections/' took 0.01s
+[2015.11.14-21.48.56:816][  0]LogContentBrowser: Native class hierarchy populated in 0.0065 seconds. Added 1867 classes and 333 folders.
+[2015.11.14-21.48.56:825][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2015.11.14-21.48.56:830][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2015.11.14-21.48.56:868][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2015.11.14-21.48.56:873][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2015.11.14-21.48.56:894][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.11.14-21.48.56:902][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.11.14-21.48.56:923][  0]LogLoad: Full Startup: 5.70 seconds (BP compile: 0.00 seconds)
+[2015.11.14-21.48.56:969][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2015.11.14-21.48.57:087][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2015.11.14-21.48.57:182][  2]LogAssetRegistry: Asset discovery search completed in 1.7099 seconds
+[2015.11.14-21.48.57:182][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2015.11.14-21.48.57:182][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000024 seconds (updated 0 objects)
+[2015.11.14-21.49.14:903][660]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-21.49.14:931][660]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.11.14-21.49.14:931][660]LightingResults: New page: Lighting Build
+[2015.11.14-21.49.14:934][660]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0003 seconds. Added 5 classes and 0 folders.
+[2015.11.14-21.49.14:949][660]LoadErrors: New page: Loading map: Level1.umap
+[2015.11.14-21.49.14:950][660]MapCheck: New page: Map Check
+[2015.11.14-21.49.14:950][660]LightingResults: New page: Lighting Build
+[2015.11.14-21.49.14:959][660]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000023201E40
+[2015.11.14-21.49.14:963][660]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.11.14-21.49.14:995][660]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.11.14-21.49.15:038][660]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 43.517ms to complete.
+[2015.11.14-21.49.15:038][660]LogFileHelpers: Loading map 'Level1' took 0.108
+[2015.11.14-21.49.39:949][621]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2015.11.14-21.49.55:256][374]Cmd: DELETE
+[2015.11.14-21.49.55:256][374]Cmd: ACTOR DELETE
+[2015.11.14-21.49.55:259][374]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.11.14-21.49.55:270][374]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2015.11.14-21.49.55:947][453]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Chair)
+[2015.11.14-21.49.55:997][454]Cmd: DELETE
+[2015.11.14-21.49.55:997][454]Cmd: ACTOR DELETE
+[2015.11.14-21.49.55:998][454]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.11.14-21.49.56:010][454]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2015.11.14-21.49.56:542][518]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Table)
+[2015.11.14-21.49.56:637][523]Cmd: DELETE
+[2015.11.14-21.49.56:638][523]Cmd: ACTOR DELETE
+[2015.11.14-21.49.56:638][523]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.11.14-21.49.56:649][523]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2015.11.14-21.49.57:254][595]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Chair)
+[2015.11.14-21.49.57:916][669]Cmd: DELETE
+[2015.11.14-21.49.57:916][669]Cmd: ACTOR DELETE
+[2015.11.14-21.49.57:916][669]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.11.14-21.49.57:926][669]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2015.11.14-21.50.00:815][ 16]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Statue)
+[2015.11.14-21.50.01:370][ 77]Cmd: DELETE
+[2015.11.14-21.50.01:370][ 77]Cmd: ACTOR DELETE
+[2015.11.14-21.50.01:371][ 77]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.11.14-21.50.01:381][ 77]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2015.11.14-21.50.02:177][169]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2015.11.14-21.50.45:886][567]LogSavePackage: Save=60.146984ms
+[2015.11.14-21.50.45:886][567]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Level1F2BD198340E9B9F7AF7C2CA376BF3F95.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap'
+[2015.11.14-21.50.45:889][567]LogSavePackage: Total save time: 69.182403ms
+[2015.11.14-21.50.45:889][567]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap
+[2015.11.14-22.01.18:812][128]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.14-22.01.19:390][128]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 107 classes and 0 folders.
+[2015.11.14-22.01.19:915][128]LogRenderer: Reallocating scene render targets to support 1208x900 (Frame:12998).
+[2015.11.14-22.02.58:169][ 99]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.02.58:320][ 99]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.02.58:326][ 99]LogMaterial: 0.000101 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.03.01:249][283]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.14-22.03.01:249][283]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.03.01:249][283]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.03.22:404][999]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.03.22:410][999]LogMaterial: 0.000049 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.03.22:411][999]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant4Vector_0, compiling. 
+[2015.11.14-22.03.24:223][124]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.14-22.03.24:223][124]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.03.24:223][124]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.03.32:526][784]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.03.32:532][784]LogMaterial: 0.000069 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.03.32:625][784]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant4Vector_0, compiling. 
+[2015.11.14-22.03.33:595][844]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.14-22.03.33:595][844]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.03.33:595][844]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.03.37:531][165]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.03.37:537][165]LogMaterial: 0.000059 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.03.37:562][165]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant4Vector_0, compiling. 
+[2015.11.14-22.03.38:848][253]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.14-22.03.38:848][253]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.03.38:848][253]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.03.50:801][222]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.03.50:806][222]LogMaterial: 0.000056 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.03.51:921][292]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.14-22.03.51:921][292]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.03.51:921][292]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.03.56:526][683]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.03.56:533][683]LogMaterial: 0.000059 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.03.57:798][778]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.14-22.03.57:798][778]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.03.57:798][778]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.04.04:427][304]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.04.04:433][304]LogMaterial: 0.000057 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.04.05:624][386]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 30 instructions
+[2015.11.14-22.04.05:624][386]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.04.05:624][386]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.14-22.04.09:600][680]LogMaterialEditor: Saving and Compiling material BallMaterial
+[2015.11.14-22.04.10:279][680]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.04.10:301][680]LogMaterial: 0.000077 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.04.10:420][680]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.04.10:448][680]LogMaterial: Missing cached shader map for material BallMaterial, compiling. 
+[2015.11.14-22.04.10:456][680]LogMaterial: 0.000542 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.14-22.04.12:464][680]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/BallMaterial" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallMaterial.uasset" SILENT=true
+[2015.11.14-22.04.12:479][680]LogSavePackage: Save=13.628140ms
+[2015.11.14-22.04.12:479][680]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/BallMaterial1B0B43A948526976F8D89ABA5C7ECDBD.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallMaterial.uasset'
+[2015.11.14-22.04.12:481][680]LogSavePackage: Total save time: 15.673812ms
+[2015.11.14-22.04.12:481][680]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallMaterial.uasset
+[2015.11.14-22.04.12:486][680]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 59 instructions
+[2015.11.14-22.04.12:486][680]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.14-22.04.12:486][680]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.11.14-22.06.19:745][  5]LogEditorTransaction: Undo Modify Component(s)
+[2015.11.14-22.07.17:041][605]BlueprintLog: New page: Compile Ball
+[2015.11.14-22.07.17:107][605]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000368127A0
+[2015.11.14-22.07.17:116][605]BlueprintEditorCompileResults: Info [1105.87] Compile of Ball successful! [in 74 ms]
+[2015.11.14-22.07.20:891][879]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/Ball" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/Ball.uasset" SILENT=true
+[2015.11.14-22.07.20:916][879]LogSavePackage: Save=23.914448ms
+[2015.11.14-22.07.20:916][879]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/BallAFD78E7F4E59E264DF0990BC1FC006E5.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/Ball.uasset'
+[2015.11.14-22.07.20:920][879]LogSavePackage: Total save time: 27.389701ms
+[2015.11.14-22.07.20:920][879]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/Ball.uasset
+[2015.11.14-22.07.34:602][286]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.07.34:602][286]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.07.34:602][286]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:07:34 AM)
+[2015.11.14-22.07.34:602][286]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.07.34:609][286]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007191s)
+[2015.11.14-22.07.34:610][286]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.07.34:610][286]LogPlayLevel: PIE: World Init took: (0.000716s)
+[2015.11.14-22.07.34:610][286]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.008107s)
+[2015.11.14-22.07.34:668][286]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.07.34:677][286]LogInit: FAudioDevice initialized.
+[2015.11.14-22.07.34:722][286]LogWorld: Game class is 'GameMode'
+[2015.11.14-22.07.34:725][286]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.07.34
+[2015.11.14-22.07.34:725][286]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.07.34:725][286]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.07.34:726][286]LogWorld: Bringing up level for play took: 0.002962
+[2015.11.14-22.07.34:728][286]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.144
+[2015.11.14-22.07.34:728][286]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.07.50:990][226]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.07.51:042][226]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.07.51:061][226]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000003DB2FC0
+[2015.11.14-22.08.11:845][661]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.08.11:845][661]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.08.11:845][661]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:08:11 AM)
+[2015.11.14-22.08.11:845][661]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.08.11:851][661]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006205s)
+[2015.11.14-22.08.11:852][661]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.08.11:852][661]LogPlayLevel: PIE: World Init took: (0.000883s)
+[2015.11.14-22.08.11:852][661]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007431s)
+[2015.11.14-22.08.11:908][661]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.08.11:915][661]LogInit: FAudioDevice initialized.
+[2015.11.14-22.08.11:947][661]LogWorld: Game class is 'GameMode'
+[2015.11.14-22.08.11:950][661]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.08.11
+[2015.11.14-22.08.11:950][661]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.08.11:951][661]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.08.11:951][661]LogWorld: Bringing up level for play took: 0.002515
+[2015.11.14-22.08.11:952][661]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.633
+[2015.11.14-22.08.11:952][661]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.08.25:934][334]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.08.25:971][334]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.08.26:007][334]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003DF75260
+[2015.11.14-22.13.05:912][523]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.13.09:611][796]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.13.17:142][371]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.13.22:265][479]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.13.27:740][950]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.13.32:080][309]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.13.48:457][714]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/Ball.Ball_C'
+[2015.11.14-22.13.52:860][ 51]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/Ball.Ball_C'
+[2015.11.14-22.13.52:896][ 51]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.14.02:369][794]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.14.06:104][ 90]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/Ball.Ball_C'
+[2015.11.14-22.14.07:828][224]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.14.12:474][586]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/Ball.Ball_C'
+[2015.11.14-22.14.36:226][462]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/Ball.Ball_C'
+[2015.11.14-22.14.55:859][ 61]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.14.57:168][168]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.23:282][180]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.37:735][215]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.39:095][319]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.47:743][996]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.49:436][121]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.49:444][121]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.49:451][121]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.49:476][121]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.57:262][724]BlueprintLog: New page: Compile PlayerControls
+[2015.11.14-22.15.57:334][724]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.15.57:335][724]BlueprintEditorCompileResults: Info [1626.08] Compile of PlayerControls successful! [in 73 ms]
+[2015.11.14-22.15.57:355][724]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.16.12:789][393]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.16.23:870][973]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.16.24:500][ 16]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.16.25:333][ 78]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.16.46:457][333]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.17.26:839][259]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.17.58:947][530]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.17.59:453][566]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.18.00:347][635]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.19.15:704][104]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.19.18:264][301]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.19.43:795][729]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.19.57:130][698]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.20.19:116][835]LogSavePackage: Save=66.354324ms
+[2015.11.14-22.20.19:116][835]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Level1_Auto1677712E94C5B212F9EF1638609721255.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Autosaves/Game/StarterContent/Maps/Level1_Auto1.umap'
+[2015.11.14-22.20.19:117][835]LogSavePackage: Total save time: 73.099270ms
+[2015.11.14-22.20.19:117][835]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Autosaves/Game/StarterContent/Maps/Level1_Auto1.umap
+[2015.11.14-22.20.19:120][835]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Level1' took 0.107
+[2015.11.14-22.20.19:120][835]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.107
+[2015.11.14-22.20.19:125][835]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/PlayerData/PlayerControls] ([1] browsable assets)...
+[2015.11.14-22.20.19:125][835]OBJ SavePackage: Finished generating thumbnails for package [/Game/PlayerData/PlayerControls]
+[2015.11.14-22.20.19:169][835]LogSavePackage: Save=42.747471ms
+[2015.11.14-22.20.19:169][835]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/PlayerControls_Auto1A3C9FA9F4ADCA58BC7C01492A9B84D30.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Autosaves/Game/PlayerData/PlayerControls_Auto1.uasset'
+[2015.11.14-22.20.19:170][835]LogSavePackage: Total save time: 43.981753ms
+[2015.11.14-22.20.19:170][835]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Autosaves/Game/PlayerData/PlayerControls_Auto1.uasset
+[2015.11.14-22.20.19:170][835]LogFileHelpers: Auto-saving content packages took 0.050
+[2015.11.14-22.20.22:921][849]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/PlayerControls" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset" SILENT=true
+[2015.11.14-22.20.22:966][849]LogSavePackage: Save=42.519268ms
+[2015.11.14-22.20.22:966][849]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/PlayerControlsF65DCA0140DCFF730C478DBAF534DCAA.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset'
+[2015.11.14-22.20.22:969][849]LogSavePackage: Total save time: 46.584651ms
+[2015.11.14-22.20.22:969][849]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset
+[2015.11.14-22.20.24:153][928]BlueprintLog: New page: Compile PlayerControls
+[2015.11.14-22.20.24:223][928]LogBlueprintUserMessages: PostEditorRefresh for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.20.24:224][928]BlueprintEditorCompileResults: Info [1892.96] Compile of PlayerControls successful! [in 70 ms]
+[2015.11.14-22.20.24:245][928]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'PlayerControls', cached variable property's owner is '/Game/PlayerData/PlayerControls.SKEL_PlayerControls_C'
+[2015.11.14-22.20.30:912][496]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.20.30:912][496]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.20.30:912][496]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:20:30 AM)
+[2015.11.14-22.20.30:912][496]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.20.30:919][496]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007024s)
+[2015.11.14-22.20.30:920][496]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.20.30:920][496]LogPlayLevel: PIE: World Init took: (0.000910s)
+[2015.11.14-22.20.30:920][496]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.008130s)
+[2015.11.14-22.20.30:973][496]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.20.30:981][496]LogInit: FAudioDevice initialized.
+[2015.11.14-22.20.31:013][496]LogWorld: Game class is 'GameMode'
+[2015.11.14-22.20.31:016][496]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.20.31
+[2015.11.14-22.20.31:016][496]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.20.31:016][496]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.20.31:016][496]LogWorld: Bringing up level for play took: 0.002909
+[2015.11.14-22.20.31:017][496]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.419
+[2015.11.14-22.20.31:017][496]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.20.35:046][971]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.20.35:085][971]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.20.35:106][971]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000208FE3E0
+[2015.11.14-22.22.14:107][495]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2015.11.14-22.22.33:039][255]LogMetaData: Removing '/Game/PlayerData/BallGameMode.BallGameMode:UserConstructionScript.K2Node_FunctionEntry_53' ref from Metadata '/Game/PlayerData/GameMode.PackageMetaData'
+[2015.11.14-22.22.33:039][255]LogMetaData: Removing '/Game/PlayerData/BallGameMode.SKEL_BallGameMode_C' ref from Metadata '/Game/PlayerData/GameMode.PackageMetaData'
+[2015.11.14-22.22.33:039][255]LogMetaData: Removing '/Game/PlayerData/BallGameMode.BallGameMode_C' ref from Metadata '/Game/PlayerData/GameMode.PackageMetaData'
+[2015.11.14-22.22.33:039][255]LogMetaData: Removing '/Game/PlayerData/BallGameMode.BallGameMode:EventGraph.K2Node_Event_158' ref from Metadata '/Game/PlayerData/GameMode.PackageMetaData'
+[2015.11.14-22.22.33:039][255]LogMetaData: Removing '/Game/PlayerData/BallGameMode.BallGameMode:EventGraph.K2Node_Event_159' ref from Metadata '/Game/PlayerData/GameMode.PackageMetaData'
+[2015.11.14-22.22.33:066][255]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/BallGameMode" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallGameMode.uasset" SILENT=true
+[2015.11.14-22.22.33:081][255]LogSavePackage: Save=12.627492ms
+[2015.11.14-22.22.33:081][255]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/BallGameModeAE89D9354A1B44918949FD9016AE9022.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallGameMode.uasset'
+[2015.11.14-22.22.33:083][255]LogSavePackage: Total save time: 14.908005ms
+[2015.11.14-22.22.33:083][255]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallGameMode.uasset
+[2015.11.14-22.22.36:152][525]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2015.11.14-22.22.57:652][166]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.22.57:652][166]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.22.57:652][166]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:22:57 AM)
+[2015.11.14-22.22.57:652][166]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.22.57:660][166]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008114s)
+[2015.11.14-22.22.57:662][166]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.22.57:662][166]LogPlayLevel: PIE: World Init took: (0.001402s)
+[2015.11.14-22.22.57:662][166]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.009938s)
+[2015.11.14-22.22.57:715][166]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.22.57:722][166]LogInit: FAudioDevice initialized.
+[2015.11.14-22.22.57:753][166]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.22.57:756][166]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.22.57
+[2015.11.14-22.22.57:756][166]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.22.57:756][166]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.22.57:756][166]LogWorld: Bringing up level for play took: 0.002603
+[2015.11.14-22.22.57:757][166]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.845
+[2015.11.14-22.22.57:757][166]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.13:793][ 85]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.13:829][ 85]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.13:865][ 85]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003DE60D60
+[2015.11.14-22.23.19:367][354]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:367][354]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:411][355]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:411][355]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:428][356]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:428][356]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:454][357]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:454][357]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:469][358]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:469][358]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:483][359]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:484][359]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:498][360]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:498][360]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:513][361]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.19:513][361]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.23.19:528][362]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_7:PersistentLevel.PlayerControls_C_1
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.23.27:331][951]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/PlayerControls" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset" SILENT=true
+[2015.11.14-22.23.27:371][951]LogSavePackage: Save=34.623047ms
+[2015.11.14-22.23.27:371][951]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/PlayerControls1CF76ECC4450EB09FEEA199E8F6E1228.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset'
+[2015.11.14-22.23.27:373][951]LogSavePackage: Total save time: 40.850919ms
+[2015.11.14-22.23.27:373][951]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset
+[2015.11.14-22.23.27:931][994]BlueprintLog: New page: Compile PlayerControls
+[2015.11.14-22.23.28:000][994]BlueprintEditorCompileResults: Info [2076.73] Compile of PlayerControls successful! [in 68 ms]
+[2015.11.14-22.23.31:065][269]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.31:065][269]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.23.31:065][269]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:23:31 AM)
+[2015.11.14-22.23.31:065][269]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.23.31:072][269]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006580s)
+[2015.11.14-22.23.31:072][269]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.23.31:072][269]LogPlayLevel: PIE: World Init took: (0.000689s)
+[2015.11.14-22.23.31:073][269]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007472s)
+[2015.11.14-22.23.31:123][269]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.23.31:131][269]LogInit: FAudioDevice initialized.
+[2015.11.14-22.23.31:163][269]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.23.31:166][269]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.23.31
+[2015.11.14-22.23.31:166][269]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.23.31:166][269]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.23.31:166][269]LogWorld: Bringing up level for play took: 0.002565
+[2015.11.14-22.23.31:167][269]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.564
+[2015.11.14-22.23.31:167][269]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.39:811][301]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.39:846][301]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.39:882][301]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000130C1EE0
+[2015.11.14-22.23.40:747][401]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2015.11.14-22.23.47:746][123]LogEditorViewport: Clicking on Actor (LMB): Ball_C (Ball)
+[2015.11.14-22.23.52:843][717]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.23.52:843][717]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.23.52:843][717]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:23:52 AM)
+[2015.11.14-22.23.52:843][717]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.23.52:850][717]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006447s)
+[2015.11.14-22.23.52:850][717]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.23.52:851][717]LogPlayLevel: PIE: World Init took: (0.000691s)
+[2015.11.14-22.23.52:851][717]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007342s)
+[2015.11.14-22.23.52:906][717]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.23.52:914][717]LogInit: FAudioDevice initialized.
+[2015.11.14-22.23.52:945][717]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.23.52:948][717]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.23.52
+[2015.11.14-22.23.52:948][717]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.23.52:949][717]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.23.52:949][717]LogWorld: Bringing up level for play took: 0.002666
+[2015.11.14-22.23.52:950][717]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.347
+[2015.11.14-22.23.52:950][717]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.00:365][603]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.00:404][603]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.00:423][603]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000007183880
+[2015.11.14-22.24.56:785][408]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.56:785][408]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.24.56:785][408]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:24:56 AM)
+[2015.11.14-22.24.56:785][408]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.24.56:792][408]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006712s)
+[2015.11.14-22.24.56:792][408]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.24.56:793][408]LogPlayLevel: PIE: World Init took: (0.000797s)
+[2015.11.14-22.24.56:793][408]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007735s)
+[2015.11.14-22.24.56:845][408]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.24.56:853][408]LogInit: FAudioDevice initialized.
+[2015.11.14-22.24.56:884][408]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.24.56:887][408]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.24.56
+[2015.11.14-22.24.56:887][408]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.24.56:888][408]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.24.56:888][408]LogWorld: Bringing up level for play took: 0.002539
+[2015.11.14-22.24.56:889][408]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.284
+[2015.11.14-22.24.56:889][408]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.59:901][765]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.59:940][765]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.24.59:976][765]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002A606700
+[2015.11.14-22.25.01:767][906]LogActor:Warning: GameNetworkManager /Engine/Transient.World_8:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.25.08:446][463]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:446][463]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:498][464]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:498][464]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:521][465]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:521][465]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:553][466]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:553][466]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:570][467]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:570][467]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:589][468]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:589][468]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:608][469]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:608][469]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:624][470]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.08:624][470]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.25.08:642][471]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_9:PersistentLevel.PlayerControls_C_3
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:0212
+[2015.11.14-22.25.21:680][451]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.21:680][451]BlueprintLog: New page: Pre-Play auto-recompile
+[2015.11.14-22.25.21:685][451]LogPlayLevel: [PlayLevel] Compiling PlayerControls before play...
+[2015.11.14-22.25.21:733][451]LogPlayLevel: PlayLevel: Blueprint regeneration took 53 ms (1 blueprints)
+[2015.11.14-22.25.21:753][451]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000003C413A0
+[2015.11.14-22.25.21:756][451]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:25:21 AM)
+[2015.11.14-22.25.21:756][451]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.25.21:762][451]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006059s)
+[2015.11.14-22.25.21:763][451]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.25.21:763][451]LogPlayLevel: PIE: World Init took: (0.000679s)
+[2015.11.14-22.25.21:763][451]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.006926s)
+[2015.11.14-22.25.21:820][451]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.25.21:829][451]LogInit: FAudioDevice initialized.
+[2015.11.14-22.25.21:860][451]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.25.21:863][451]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.25.21
+[2015.11.14-22.25.21:863][451]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.25.21:864][451]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.25.21:864][451]LogWorld: Bringing up level for play took: 0.002599
+[2015.11.14-22.25.21:865][451]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.74
+[2015.11.14-22.25.21:865][451]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.27:506][880]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.27:540][880]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.27:577][880]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002090CE00
+[2015.11.14-22.25.29:520][ 35]BlueprintLog: New page: Compile PlayerControls
+[2015.11.14-22.25.29:589][ 35]BlueprintEditorCompileResults: Info [2198.32] Compile of PlayerControls successful! [in 68 ms]
+[2015.11.14-22.25.30:146][ 77]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/PlayerControls" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset" SILENT=true
+[2015.11.14-22.25.30:182][ 77]LogSavePackage: Save=34.564487ms
+[2015.11.14-22.25.30:182][ 77]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/PlayerControls06768C3C4B98C051034A98AF68A468BD.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset'
+[2015.11.14-22.25.30:185][ 77]LogSavePackage: Total save time: 37.755396ms
+[2015.11.14-22.25.30:185][ 77]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset
+[2015.11.14-22.25.32:345][274]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.32:345][274]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.25.32:345][274]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:25:32 AM)
+[2015.11.14-22.25.32:345][274]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.25.32:351][274]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006306s)
+[2015.11.14-22.25.32:352][274]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.25.32:352][274]LogPlayLevel: PIE: World Init took: (0.000771s)
+[2015.11.14-22.25.32:352][274]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007274s)
+[2015.11.14-22.25.32:407][274]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.25.32:416][274]LogInit: FAudioDevice initialized.
+[2015.11.14-22.25.32:446][274]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.25.32:450][274]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.25.32
+[2015.11.14-22.25.32:450][274]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.25.32:450][274]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.25.32:450][274]LogWorld: Bringing up level for play took: 0.002550
+[2015.11.14-22.25.32:451][274]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.154
+[2015.11.14-22.25.32:451][274]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.57:887][319]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.57:926][319]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.25.57:946][319]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000005EF33D80
+[2015.11.14-22.27.21:225][400]BlueprintLog: New page: Compile PlayerControls
+[2015.11.14-22.27.21:296][400]BlueprintEditorCompileResults: Info [2310.02] Compile of PlayerControls successful! [in 70 ms]
+[2015.11.14-22.27.22:391][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/PlayerControls" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset" SILENT=true
+[2015.11.14-22.27.22:427][483]LogSavePackage: Save=34.485100ms
+[2015.11.14-22.27.22:427][483]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/PlayerControls78B35F8D468AD65F8FDB1E8111BA5541.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset'
+[2015.11.14-22.27.22:430][483]LogSavePackage: Total save time: 37.663329ms
+[2015.11.14-22.27.22:430][483]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset
+[2015.11.14-22.27.31:264][227]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.27.31:264][227]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.27.31:265][227]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:27:31 AM)
+[2015.11.14-22.27.31:265][227]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.27.31:272][227]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007438s)
+[2015.11.14-22.27.31:273][227]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.27.31:273][227]LogPlayLevel: PIE: World Init took: (0.000759s)
+[2015.11.14-22.27.31:273][227]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.008451s)
+[2015.11.14-22.27.31:303][227]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000082396C0
+[2015.11.14-22.27.31:333][227]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.27.31:343][227]LogInit: FAudioDevice initialized.
+[2015.11.14-22.27.31:380][227]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.27.31:383][227]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.27.31
+[2015.11.14-22.27.31:383][227]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.27.31:383][227]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.27.31:383][227]LogWorld: Bringing up level for play took: 0.002682
+[2015.11.14-22.27.31:384][227]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.778
+[2015.11.14-22.27.31:385][227]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.27.43:874][720]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.27.43:908][720]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.27.43:928][720]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004FB34A40
+[2015.11.14-22.27.46:004][962]LogEditorViewport: Clicking on Actor (LMB): Ball_C (Ball)
+[2015.11.14-22.27.46:094][971]LogEditorViewport: Clicking on Component (LMB): CameraComponent (Camera)
+[2015.11.14-22.30.33:568][104]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:568][104]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:626][105]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:626][105]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:641][106]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:641][106]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:673][107]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:673][107]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:691][108]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:691][108]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:713][109]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:713][109]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:734][110]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:734][110]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:752][111]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.30.33:752][111]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:014B
+[2015.11.14-22.30.33:770][112]LogScript:Warning: Accessed None 'Sphere'
+	PlayerControls_C /Engine/Transient.World_13:PersistentLevel.PlayerControls_C_2
+	Function /Game/PlayerData/PlayerControls.PlayerControls_C:ExecuteUbergraph_PlayerControls:01E8
+[2015.11.14-22.31.57:091][107]BlueprintLog: New page: Compile PlayerControls
+[2015.11.14-22.31.57:162][107]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000593A1300
+[2015.11.14-22.31.57:163][107]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000009487880
+[2015.11.14-22.31.57:169][107]BlueprintEditorCompileResults: Info [2585.89] Compile of PlayerControls successful! [in 78 ms]
+[2015.11.14-22.31.58:000][170]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/PlayerControls" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset" SILENT=true
+[2015.11.14-22.31.58:048][170]LogSavePackage: Save=42.319740ms
+[2015.11.14-22.31.58:048][170]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/PlayerControlsDB6366B5416E013CBD3D80BCE33E950C.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset'
+[2015.11.14-22.31.58:050][170]LogSavePackage: Total save time: 48.926737ms
+[2015.11.14-22.31.58:051][170]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/PlayerControls.uasset
+[2015.11.14-22.32.00:320][376]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.32.00:320][376]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.32.00:320][376]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:32:00 AM)
+[2015.11.14-22.32.00:320][376]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.32.00:326][376]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006462s)
+[2015.11.14-22.32.00:327][376]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.32.00:327][376]LogPlayLevel: PIE: World Init took: (0.000680s)
+[2015.11.14-22.32.00:327][376]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007344s)
+[2015.11.14-22.32.00:382][376]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.32.00:389][376]LogInit: FAudioDevice initialized.
+[2015.11.14-22.32.00:420][376]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.32.00:424][376]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.32.00
+[2015.11.14-22.32.00:424][376]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.32.00:424][376]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.32.00:424][376]LogWorld: Bringing up level for play took: 0.002622
+[2015.11.14-22.32.00:425][376]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.187
+[2015.11.14-22.32.00:425][376]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.32.21:552][907]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.32.21:592][907]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.32.21:628][907]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000005EF54400
+[2015.11.14-22.32.53:262][453]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/Ball" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/Ball.uasset" SILENT=true
+[2015.11.14-22.32.53:289][453]LogSavePackage: Save=21.600428ms
+[2015.11.14-22.32.53:289][453]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Ball0C91FE0848B8A9F097699CAA96E91655.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/Ball.uasset'
+[2015.11.14-22.32.53:291][453]LogSavePackage: Total save time: 27.450074ms
+[2015.11.14-22.32.53:291][453]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/Ball.uasset
+[2015.11.14-22.32.57:063][797]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.32.57:063][797]BlueprintLog: New page: Pre-Play auto-recompile
+[2015.11.14-22.32.57:064][797]LogPlayLevel: [PlayLevel] Compiling Ball before play...
+[2015.11.14-22.32.57:115][797]LogPlayLevel: PlayLevel: Blueprint regeneration took 52 ms (2 blueprints)
+[2015.11.14-22.32.57:116][797]LogPlayLevel: [PlayLevel] Compiling PlayerControls before play...
+[2015.11.14-22.32.57:170][797]LogPlayLevel: PlayLevel: Blueprint regeneration took 107 ms (2 blueprints)
+[2015.11.14-22.32.57:191][797]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000007CD0720
+[2015.11.14-22.32.57:195][797]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:32:57 AM)
+[2015.11.14-22.32.57:195][797]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.32.57:201][797]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006132s)
+[2015.11.14-22.32.57:202][797]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.32.57:202][797]LogPlayLevel: PIE: World Init took: (0.000765s)
+[2015.11.14-22.32.57:202][797]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007158s)
+[2015.11.14-22.32.57:255][797]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.32.57:262][797]LogInit: FAudioDevice initialized.
+[2015.11.14-22.32.57:294][797]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.32.57:297][797]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.32.57
+[2015.11.14-22.32.57:298][797]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.32.57:298][797]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.32.57:298][797]LogWorld: Bringing up level for play took: 0.002537
+[2015.11.14-22.32.57:299][797]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 0.686
+[2015.11.14-22.32.57:299][797]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.04:916][706]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.04:954][706]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.04:991][706]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004FAFBCE0
+[2015.11.14-22.33.05:922][811]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.05:922][811]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.33.05:922][811]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:33:05 AM)
+[2015.11.14-22.33.05:922][811]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.33.05:928][811]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006174s)
+[2015.11.14-22.33.05:929][811]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.33.05:929][811]LogPlayLevel: PIE: World Init took: (0.000719s)
+[2015.11.14-22.33.05:929][811]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007092s)
+[2015.11.14-22.33.05:977][811]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.33.05:984][811]LogInit: FAudioDevice initialized.
+[2015.11.14-22.33.06:017][811]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.33.06:020][811]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.33.06
+[2015.11.14-22.33.06:020][811]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.33.06:021][811]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.33.06:021][811]LogWorld: Bringing up level for play took: 0.002523
+[2015.11.14-22.33.06:022][811]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.592
+[2015.11.14-22.33.06:022][811]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.24:883][ 69]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.24:922][ 69]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.33.24:958][ 69]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000004132DE0
+[2015.11.14-22.33.26:721][276]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2015.11.14-22.33.36:320][400]Cmd: EDIT COPY
+[2015.11.14-22.33.36:540][422]Cmd: EDIT PASTE
+[2015.11.14-22.33.52:670][159]Cmd: EDIT COPY
+[2015.11.14-22.33.52:980][195]Cmd: EDIT PASTE
+[2015.11.14-22.33.59:028][869]Cmd: EDIT COPY
+[2015.11.14-22.33.59:662][944]Cmd: EDIT PASTE
+[2015.11.14-22.34.27:783][960]Cmd: EDIT COPY
+[2015.11.14-22.34.28:095][988]Cmd: EDIT PASTE
+[2015.11.14-22.34.34:266][693]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.34.34:266][693]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.14-22.34.34:266][693]PIE: New page: PIE session: Level1 (Nov 14, 2015, 10:34:34 AM)
+[2015.11.14-22.34.34:266][693]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Level1
+[2015.11.14-22.34.34:272][693]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006415s)
+[2015.11.14-22.34.34:273][693]LogAIModule: Creating AISystem for world Level1
+[2015.11.14-22.34.34:273][693]LogPlayLevel: PIE: World Init took: (0.000763s)
+[2015.11.14-22.34.34:273][693]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Level1.Level1 to /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 (0.007392s)
+[2015.11.14-22.34.34:303][693]LogInit: XAudio2 using 'Speakers (VIA High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.14-22.34.34:311][693]LogInit: FAudioDevice initialized.
+[2015.11.14-22.34.34:343][693]LogWorld: Game class is 'BallGameMode_C'
+[2015.11.14-22.34.34:347][693]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2015.11.14-16.34.34
+[2015.11.14-22.34.34:347][693]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameSession_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.34.34:347][693]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Level1.Level1:PersistentLevel.GameNetworkManager_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.14-22.34.34:347][693]LogWorld: Bringing up level for play took: 0.002916
+[2015.11.14-22.34.34:348][693]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Level1 -0.267
+[2015.11.14-22.34.34:348][693]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.34.49:071][455]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.34.49:128][455]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/StarterContent/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Level1.Level1:PersistentLevel.Level1'
+[2015.11.14-22.34.49:148][455]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004FB37560
+[2015.11.14-22.34.52:905][881]LogSavePackage: Save=67.194389ms
+[2015.11.14-22.34.52:905][881]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Level1033D9D6340E7C858FA4854A790BD5B72.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap'
+[2015.11.14-22.34.52:907][881]LogSavePackage: Total save time: 74.545760ms
+[2015.11.14-22.34.52:907][881]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap
+[2015.11.14-22.34.58:833][565]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000317A1080
+[2015.11.14-22.34.58:834][565]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000023F5CFE0
+[2015.11.14-22.34.58:835][565]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000125B0F40
+[2015.11.14-22.34.58:835][565]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004FB37CE0
+[2015.11.14-22.34.58:836][565]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000064FEB9C0
+[2015.11.14-22.34.58:836][565]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000825D80E0
+[2015.11.14-22.34.58:906][565]LogSavePackage: Save=63.815125ms
+[2015.11.14-22.34.58:906][565]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/Level15CED5D834B07373F836606BF0C1E61DE.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap'
+[2015.11.14-22.34.58:907][565]LogSavePackage: Total save time: 66.325653ms
+[2015.11.14-22.34.58:907][565]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/StarterContent/Maps/Level1.umap
+[2015.11.14-22.35.13:944][140]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/BallGameMode" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallGameMode.uasset" SILENT=true
+[2015.11.14-22.35.13:960][140]LogSavePackage: Save=11.409810ms
+[2015.11.14-22.35.13:960][140]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/BallGameMode64616D8D471DD7DC17F82CA27C8CEC8C.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallGameMode.uasset'
+[2015.11.14-22.35.13:962][140]LogSavePackage: Total save time: 17.345786ms
+[2015.11.14-22.35.13:962][140]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/BallGameMode.uasset
+[2015.11.14-22.35.13:968][140]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerData/GameMode" FILE="../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/GameMode.uasset" SILENT=true
+[2015.11.14-22.35.13:972][140]LogSavePackage: Save=2.772838ms
+[2015.11.14-22.35.13:972][140]LogSavePackage: Moving '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Saved/GameMode3FAC4B9F47F3DB7A3E62F38B61CC4CCB.tmp' to '../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/GameMode.uasset'
+[2015.11.14-22.35.13:974][140]LogSavePackage: Total save time: 4.906647ms
+[2015.11.14-22.35.13:974][140]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Noah/Documents/Unreal-3D-Platformer-1/Content/PlayerData/GameMode.uasset
+[2015.11.14-22.35.14:327][141]Cmd: QUIT_EDITOR
+[2015.11.14-22.35.14:598][141]LogExit: Preparing to exit.
+[2015.11.14-22.35.15:721][141]LogExit: Editor shut down
+[2015.11.14-22.35.15:721][141]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000013049120
+[2015.11.14-22.35.15:721][141]LogExit: Transaction tracking system shut down
+[2015.11.14-22.35.15:722][141]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000011AD8F40
+[2015.11.14-22.35.15:722][141]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003199B1A0
+[2015.11.14-22.35.15:723][141]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003139C360
+[2015.11.14-22.35.15:724][141]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000177E59E0
+[2015.11.14-22.35.15:908][141]LogExit: Object subsystem successfully closed.
+[2015.11.14-22.35.15:926][141]LogD3D11RHI: Shutdown
+[2015.11.14-22.35.15:926][141]LogD3D11RHI: CleanupD3DDevice
+[2015.11.14-22.35.15:979][141]LogD3D11RHI: ~FD3D11DynamicRHI
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (200)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module MaterialEditor (199)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module BlueprintGraph (198)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module StatsViewer (197)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module CrashTracker (196)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module SceneOutliner (195)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module SuperSearch (194)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module WidgetCarousel (193)
+[2015.11.14-22.35.15:997][141]LogModuleManager: Shutting down and abandoning module AddContentDialog (192)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module EditorWidgets (191)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module CollectionManager (190)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module FoliageEdit (189)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module LandscapeEditor (188)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module ActorPickerMode (187)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module GeometryMode (186)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module TextureAlignMode (185)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module BspMode (184)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module PlacementMode (183)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module AutomationWorker (182)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module CharacterAI (181)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module SmartSnapping (180)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module ViewportSnapping (179)
+[2015.11.14-22.35.15:998][141]LogModuleManager: Shutting down and abandoning module LogVisualizer (178)
+[2015.11.14-22.35.15:999][141]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (177)
+[2015.11.14-22.35.15:999][141]LogModuleManager: Shutting down and abandoning module IntroTutorials (176)
+[2015.11.14-22.35.15:999][141]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (175)
+[2015.11.14-22.35.15:999][141]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (174)
+[2015.11.14-22.35.15:999][141]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (173)
+[2015.11.14-22.35.15:999][141]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (172)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (171)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (170)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (169)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module MergeActors (168)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module SizeMap (167)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module TreeMap (166)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module ReferenceViewer (165)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module LocalizationService (164)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (163)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module HardwareTargeting (162)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (161)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module UndoHistory (160)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (159)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module UserFeedback (158)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module XmlParser (157)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module Blutility (156)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (155)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (154)
+[2015.11.14-22.35.16:598][141]LogModuleManager: Shutting down and abandoning module InputBindingEditor (153)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (152)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module SettingsEditor (151)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module ProjectLauncher (150)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module SessionFrontend (149)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module ProfilerClient (148)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (147)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module DeviceManager (146)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module AutomationController (145)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module AutomationWindow (144)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module Layers (143)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (142)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module DetailCustomizations (141)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module PackagesDialog (140)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module Persona (139)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module Kismet (138)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module GraphEditor (137)
+[2015.11.14-22.35.16:599][141]LogModuleManager: Shutting down and abandoning module ClassViewer (136)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module Toolbox (135)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module ModuleUI (134)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module MovieSceneTools (133)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module OutputLog (132)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module GammaUI (131)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module Documentation (130)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (129)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (128)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module AnalyticsET (127)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module Analytics (126)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module AITestSuite (125)
+[2015.11.14-22.35.16:601][141]LogModuleManager: Shutting down and abandoning module GameplayDebugger (124)
+[2015.11.14-22.35.16:602][141]LogModuleManager: Shutting down and abandoning module AIModule (123)
+[2015.11.14-22.35.16:602][141]LogModuleManager: Shutting down and abandoning module ProfilerService (122)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module TaskGraph (121)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module SlateRemote (120)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module SteamVRController (119)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module SteamVR (118)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (117)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module OculusRift (116)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module OculusLibrary (115)
+[2015.11.14-22.35.16:652][141]LogModuleManager: Shutting down and abandoning module LeapMotionController (114)
+[2015.11.14-22.35.16:659][141]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (113)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module CableComponent (112)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (111)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module MessagingDebugger (110)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (109)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module HTML5Networking (108)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (107)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module PluginBrowser (106)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module EpicSurvey (105)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module DesktopPlatform (104)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (103)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module UObjectPlugin (102)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (101)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (100)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module SourceControl (99)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module GitSourceControl (98)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (97)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (96)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (95)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module MeshPaint (94)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module SlateReflector (93)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module HotReload (92)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module MainFrame (91)
+[2015.11.14-22.35.16:660][141]LogModuleManager: Shutting down and abandoning module LevelEditor (90)
+[2015.11.14-22.35.16:661][141]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
+[2015.11.14-22.35.16:662][141]LogModuleManager: Shutting down and abandoning module AssetRegistry (88)
+[2015.11.14-22.35.16:741][141]LogModuleManager: Shutting down and abandoning module ContentBrowser (87)
+[2015.11.14-22.35.16:742][141]LogModuleManager: Shutting down and abandoning module Paper2DEditor (86)
+[2015.11.14-22.35.16:742][141]LogModuleManager: Shutting down and abandoning module UdpMessaging (85)
+[2015.11.14-22.35.16:842][141]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (84)
+[2015.11.14-22.35.16:842][141]LogModuleManager: Shutting down and abandoning module Paper2D (83)
+[2015.11.14-22.35.16:842][141]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (82)
+[2015.11.14-22.35.16:845][141]LogModuleManager: Shutting down and abandoning module Media (81)
+[2015.11.14-22.35.16:845][141]LogModuleManager: Shutting down and abandoning module WmfMedia (80)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (79)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (78)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module PropertyEditor (77)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (76)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module FunctionalTesting (75)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (74)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (73)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module MessageLog (72)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module Sequencer (71)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module AssetTools (70)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module UMGEditor (69)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module UMG (68)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module Slate (67)
+[2015.11.14-22.35.16:846][141]LogModuleManager: Shutting down and abandoning module EditorStyle (66)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module SessionServices (65)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (64)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (63)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module XAudio2 (62)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module Networking (60)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module Core (59)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module KismetCompiler (58)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module PhysXFormats (57)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module MeshUtilities (56)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module CookingStats (55)
+[2015.11.14-22.35.16:849][141]LogModuleManager: Shutting down and abandoning module DerivedDataCache (54)
+[2015.11.14-22.35.16:878][141]LogDerivedDataCache: Shutdown
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (53)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (52)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (51)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (50)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (49)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (48)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (47)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module ImageWrapper (46)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (45)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (44)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (43)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (42)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (41)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (40)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (39)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (38)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Messaging (37)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (36)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (35)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (34)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (33)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (32)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (31)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (30)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (29)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (28)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (27)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (26)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (25)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (24)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (23)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module TargetPlatform (22)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module InputCore (21)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module Settings (20)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2015.11.14-22.35.16:878][141]LogModuleManager: Shutting down and abandoning module HTTP (17)
+[2015.11.14-22.35.18:878][141]LogModuleManager: Shutting down and abandoning module XMPP (16)
+[2015.11.14-22.35.18:878][141]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2015.11.14-22.35.18:878][141]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2015.11.14-22.35.18:878][141]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2015.11.14-22.35.18:878][141]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2015.11.14-22.35.18:878][141]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2015.11.14-22.35.18:881][141]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2015.11.14-22.35.18:882][141]LogExit: Exiting.
+[2015.11.14-22.35.18:902][141]Log file closed, 11/14/15 16:35:18
